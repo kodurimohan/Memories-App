@@ -19,7 +19,7 @@ export const getPosts = async (req, res) => {
 
     const total = await PostMessage.countDocuments({});
     const posts = await PostMessage.find()
-      .sort({ id: -1 })
+      .sort({ _id: 1 })
       .limit(LIMIT)
       .skip(startIndex);
     res.status(200).json({

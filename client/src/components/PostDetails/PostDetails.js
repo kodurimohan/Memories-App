@@ -31,13 +31,13 @@ function PostDetails() {
 
   if (!post) return null;
 
-  /*if (isLoading) {
+  if (isLoading) {
     return (
       <Paper elevation={6} className={classes.loadingPaper}>
         <CircularProgress size="7em" />
       </Paper>
     );
-  }*/
+  }
   const openPost = (_id) => navigate(`/posts/${_id}`);
 
   const recommendedPosts = posts.filter(({ _id }) => _id !== post._id);
