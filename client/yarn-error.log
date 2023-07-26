@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\koduri mohan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add marerial-ui-chip-input
+  C:\Program Files\nodejs\node.exe C:\Users\koduri mohan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add dotenv
 
 PATH: 
   C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\mongosh-1.6.1\bin;C:\Program Files\MongoDB\Server\6.0\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\koduri mohan\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\koduri mohan\AppData\Local\Programs\Python\Python311\;C:\Users\koduri mohan\AppData\Local\Microsoft\WindowsApps;C:\Users\koduri mohan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\koduri mohan\AppData\Local\atom\bin;C:\Users\koduri mohan\AppData\Local\Programs\Hyper\resources\bin;C:\Users\koduri mohan\AppData\Roaming\npm;C:\Users\koduri mohan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\Users\koduri mohan\AppData\Local\gitkraken\bin
@@ -14,17 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/marerial-ui-chip-input: Not found
-      at Request.params.callback [as _callback] (C:\Users\koduri mohan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at Request.self.callback (C:\Users\koduri mohan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
-      at Request.emit (node:events:513:28)
-      at Request.<anonymous> (C:\Users\koduri mohan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
-      at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (C:\Users\koduri mohan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
-      at Object.onceWrapper (node:events:627:28)
-      at IncomingMessage.emit (node:events:525:35)
-      at endReadableNT (node:internal/streams/readable:1358:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
 
 npm manifest: 
   {
@@ -43,6 +34,7 @@ npm manifest:
       "cors": "^2.8.5",
       "jsonwebtoken": "^9.0.1",
       "jwt-decode": "^3.1.2",
+      "material-ui-chip-input": "^1.1.0",
       "moment": "^2.29.4",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
@@ -3269,6 +3261,11 @@ Lockfile:
       define-property "^0.2.5"
       isobject "^3.0.0"
       static-extend "^0.1.1"
+  
+  classnames@^2.2.5:
+    version "2.3.2"
+    resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+    integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
   
   clean-css@4.2.x:
     version "4.2.4"
@@ -7596,6 +7593,14 @@ Lockfile:
     dependencies:
       object-visit "^1.0.0"
   
+  material-ui-chip-input@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/material-ui-chip-input/-/material-ui-chip-input-1.1.0.tgz#46550074da358fcfe075350181c315c9a405dc7d"
+    integrity sha512-95JsxYtzBFUyvzLC0Ae8qo1h8heu9wcSgnGjF/Sy9QQ9pL/ufLVUyjS8uFULW4kEyeNZbZurux3KZKC3FLnoqg==
+    dependencies:
+      classnames "^2.2.5"
+      prop-types "^15.6.1"
+  
   math-random@^1.0.1:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/math-random/-/math-random-1.0.4.tgz#5dd6943c938548267016d4e34f057583080c514c"
@@ -9430,7 +9435,7 @@ Lockfile:
       kleur "^2.0.1"
       sisteransi "^0.1.1"
   
-  prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+  prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.8.1"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
     integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
